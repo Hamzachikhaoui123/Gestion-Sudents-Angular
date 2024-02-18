@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="login">
+<form class="user" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="form-group">
+      <input type="email" class="form-control form-control-user" formControlName="email"
+        id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+      <!-- <div *ngIf="email?.touched  && email?.invalid">
+        <small *ngIf='email?.errors?.required' class="text-danger">Email is required</small>
+        <small *ngIf='email?.errors?.email' class="text-danger"> Invalid Email</small>
+
+      </div> -->
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control form-control-user" formControlName="password" id="exampleInputPassword" placeholder="Password">
+        <!-- <div *ngIf="password?.touched  && password?.invalid">
+          <small *ngIf='password?.errors?.required' class="text-danger">Password is required</small>
+          
+          <small *ngIf='password?.errors?.minlength' class="text-danger">password must contain 6 characters at least</small>
+      </div> -->
+      </div>
+   
+    <button type="submit"  class="btn btn-primary btn-user btn-block">
+      Login
+    </button>
+
+  </form>
+</div>

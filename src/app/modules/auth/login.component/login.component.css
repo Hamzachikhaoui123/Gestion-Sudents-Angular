@@ -1,0 +1,13 @@
+.login {
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    margin-top: 25%;
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 0.5rem;
+    padding: 25px;
+    margin-inline: 25%;
+    flex-direction: column;
+    gap: 15px;
+}
